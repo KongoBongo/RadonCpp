@@ -5,5 +5,8 @@
 #include <stdlib.h>
 
 char* readfile(const char* path);
+char charAt(const char* string, int position);
+int getSize(char* string)
+int getLineCount(char* string, int size)
 
-#endif
+#endif // RDN_UTIL_H

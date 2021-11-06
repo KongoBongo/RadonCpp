@@ -25,3 +25,28 @@ char* readfile(const char* path) {
 
     return buf;
 }
+
+char charAt(const char* string, int position) { // why did I write this
+    return string[position];
+}
+
+int getSize (char* string) {
+    char* top;    
+    for (top = str; *top != '\0'; top++);
+    return top - str;
+}
+
+int getLineCount(char* string, int size) {
+    int newlines = 0;
+    int pos = 0;
+    char* p;
+    for (int i = 0; i < size; i++) {
+        p = str[pos]
+        if (p[i] == '\n' || p[i] == ";") {
+            newlines++;
+            pos++;
+        }
+    }
+
+    return newlines;
+}
